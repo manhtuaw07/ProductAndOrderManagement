@@ -29,3 +29,9 @@ CREATE TABLE `order_detail` (
    `quantity` INT NOT NULL,
    PRIMARY KEY (`id`)
 );
+
+-- add index for table
+CREATE INDEX idx_order_id ON `orders`(`id`);
+CREATE INDEX idx_order_customer_name_id ON `orders` (`customer_name`);
+CREATE INDEX idx_product_id ON `product` (`id`);
+CREATE INDEX idx_product_price ON `product` (`price`);

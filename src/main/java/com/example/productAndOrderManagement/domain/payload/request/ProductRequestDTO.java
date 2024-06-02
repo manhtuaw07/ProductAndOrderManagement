@@ -1,5 +1,6 @@
 package com.example.productAndOrderManagement.domain.payload.request;
 
+import com.example.productAndOrderManagement.domain.dto.Rating;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -7,8 +8,12 @@ import lombok.Setter;
 @Setter
 public class ProductRequestDTO {
 
-  private String name;
+  private Long id;
+  private String title;
+  private Double price;
   private String description;
-  private double price;
-  private int quantity;
+  private String category;
+  private String imageLink;
+  private String imageBase64;
+  private Rating rating;
 }

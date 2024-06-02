@@ -1,14 +1,14 @@
-CREATE TABLE `product` (
-   `id` BIGINT(20) NOT NULL AUTO_INCREMENT,
-   `name` VARCHAR(255) NOT NULL,
-   `description` TEXT,
-   `price` DECIMAL(10, 2) NOT NULL,
-   `quantity` INT NOT NULL,
-   PRIMARY KEY (`id`)
+CREATE TABLE product (
+     id BIGINT AUTO_INCREMENT PRIMARY KEY,
+     title VARCHAR(255) NOT NULL,
+     price DOUBLE NOT NULL,
+     description TEXT,
+     category VARCHAR(255),
+     image_link VARCHAR(255),
+     image_base64 TEXT,
+     rating_rate DOUBLE,
+     rating_count INT
 );
-
--- add constraint to name is not allowed duplicate
-ALTER TABLE `product` ADD CONSTRAINT `unique_name` UNIQUE (`name`);
 
 CREATE TABLE `orders` (
      `id` BIGINT(20) NOT NULL AUTO_INCREMENT,

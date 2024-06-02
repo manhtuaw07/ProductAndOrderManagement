@@ -29,28 +29,9 @@ public class ProductRequestValidator implements Validator {
 
     ProductRequestDTO productRequestDTO = (ProductRequestDTO) target;
 
-    //validate product name does not allow duplicate
-    List<Product> allProducts = productService.getAllProducts();
-    for (Product product : allProducts) {
-      if (product.getName().equals(productRequestDTO.getName())) {
-        errors.rejectValue("name", "name.duplicate", "Product name already exists");
-        break;
-      }
-    }
-
     //validate price
     if (productRequestDTO.getPrice() < 0) {
       errors.rejectValue("price", "price.invalid", "Price must be greater than 0");
-    }
-
-    //validate quantity
-    if (productRequestDTO.getQuantity() < 0) {
-      errors.rejectValue("quantity", "quantity.invalid", "Quantity must be greater than 0");
-    }
-
-    //validate name length
-    if (productRequestDTO.getName().length() < 3 || productRequestDTO.getName().length() > 50) {
-      errors.rejectValue("name", "name.invalid", "Product name must be between 3 and 50 characters");
     }
 
   }

@@ -87,12 +87,15 @@ public class OrderServiceImpl implements OrderService {
     for (ProductRequestForOrderDTO productRequest : orderRequest.getProducts()) {
       Product product = productMap.get(productRequest.getId());
 
+      //TODO: could be process in InventoryService in future
+/*
       //validate if the product is in stock
       if (product.getQuantity() < productRequest.getQuantity()) {
         throw new ResourceNotFoundException("Product out of stock");
       }
       //update quantity of the product
       product.setQuantity(product.getQuantity() - productRequest.getQuantity());
+*/
 
       OrderDetail orderDetail = new OrderDetail();
       orderDetail.setOrder(savedOrder);

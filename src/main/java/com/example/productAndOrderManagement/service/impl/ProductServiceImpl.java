@@ -7,6 +7,7 @@ import com.example.productAndOrderManagement.repository.ProductRepository;
 import com.example.productAndOrderManagement.repository.specification.ProductSpecification;
 import com.example.productAndOrderManagement.service.ProductService;
 import java.util.Map;
+import java.util.stream.Collectors;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
@@ -32,7 +33,7 @@ public class ProductServiceImpl implements ProductService{
   private final ProductRepository productRepository;
 
   public void addProduct(ProductRequestDTO productRequest) {
-    logger.info("Adding new product: {}", productRequest.getName());
+    logger.info("Adding new product: {}", productRequest.getTitle());
     Product product = modelMapper.map(productRequest, Product.class);
     Product savedProduct = productRepository.save(product);
     logger.info("Product added successfully: {}", savedProduct.getId());
@@ -103,4 +104,14 @@ public class ProductServiceImpl implements ProductService{
     logger.info("Deleting product with ID: {}", id);
     productRepository.deleteById(id);
   }
+
+  @Override
+  public void addAllProducts(List<ProductRequestDTO> productRequest) {
+      List<Product> products = productRequest.stream()
+          .map(product -> modelMapper.map(product, Product.class))
+          .collect(Collectors.toList());
+
+      productRepository.saveAll(products);
+      logger.info("All products added successfully");
+    }
 }

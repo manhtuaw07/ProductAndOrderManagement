@@ -22,4 +22,6 @@ public interface ProductService {
   Page<ProductResponseDTO> searchProducts(String keyword, int page, int size, String sort);
 
   void deleteProduct(Long id);
+
+  void addAllProducts(List<ProductRequestDTO> productRequest);
 }

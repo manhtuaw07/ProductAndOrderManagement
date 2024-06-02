@@ -1,9 +1,9 @@
 -- Inserting data into the Product table
-INSERT INTO product (id, name, description, price, quantity)
+INSERT INTO product (id, title, price, description, category, image_link, image_base64, rating_rate, rating_count)
 VALUES
-    (1, 'Product1', 'Description1', 100.0, 10),
-    (2, 'Product2', 'Description2', 200.0, 20),
-    (3, 'Product3', 'Description3', 300.0, 30);
+    (1, 'Product1', 100.0, 'Description1', 'Category1', 'image1.jpg', 'base64_1', 4.5, 100),
+    (2, 'Product2', 200.0, 'Description2', 'Category2', 'image2.jpg', 'base64_2', 4.0, 200),
+    (3, 'Product3', 300.0, 'Description3', 'Category3', 'image3.jpg', 'base64_3', 3.5, 300);
 
 -- Inserting data into the Order table
 INSERT INTO `orders` (id, order_date, customer_name, address, email, phone_number, status, payment_amount)

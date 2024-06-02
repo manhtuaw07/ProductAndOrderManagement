@@ -1,4 +1,4 @@
-package com.example.productAndOrderManagement.model;
+package com.example.productAndOrderManagement.domain.model;
 
 import java.util.Date;
 import java.util.List;

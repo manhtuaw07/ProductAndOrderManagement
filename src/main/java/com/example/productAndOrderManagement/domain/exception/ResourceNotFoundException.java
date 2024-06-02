@@ -1,4 +1,4 @@
-package com.example.productAndOrderManagement.exception;
+package com.example.productAndOrderManagement.domain.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

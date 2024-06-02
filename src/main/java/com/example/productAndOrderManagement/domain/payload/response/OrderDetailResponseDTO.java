@@ -1,6 +1,5 @@
-package com.example.productAndOrderManagement.payload.response;
+package com.example.productAndOrderManagement.domain.payload.response;
 
-import com.example.productAndOrderManagement.model.Product;
 import lombok.Getter;
 import lombok.Setter;
 

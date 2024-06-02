@@ -1,4 +1,4 @@
-package com.example.productAndOrderManagement.mapper;
+package com.example.productAndOrderManagement.domain.mapper;
 
 import java.util.HashMap;
 import java.util.List;

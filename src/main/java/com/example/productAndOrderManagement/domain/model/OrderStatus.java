@@ -1,4 +1,4 @@
-package com.example.productAndOrderManagement.model;
+package com.example.productAndOrderManagement.domain.model;
 
 public enum OrderStatus {
   PENDING,

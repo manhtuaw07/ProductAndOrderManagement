@@ -1,18 +1,17 @@
 package com.example.productAndOrderManagement.service.impl;
 
-import com.example.productAndOrderManagement.exception.ResourceNotFoundException;
-import com.example.productAndOrderManagement.model.Order;
-import com.example.productAndOrderManagement.model.OrderDetail;
-import com.example.productAndOrderManagement.model.OrderStatus;
-import com.example.productAndOrderManagement.model.Product;
-import com.example.productAndOrderManagement.payload.request.OrderRequestDTO;
-import com.example.productAndOrderManagement.payload.request.ProductRequestForOrderDTO;
-import com.example.productAndOrderManagement.payload.response.OrderResponseDTO;
+import com.example.productAndOrderManagement.domain.exception.ResourceNotFoundException;
+import com.example.productAndOrderManagement.domain.model.Order;
+import com.example.productAndOrderManagement.domain.model.OrderDetail;
+import com.example.productAndOrderManagement.domain.model.OrderStatus;
+import com.example.productAndOrderManagement.domain.model.Product;
+import com.example.productAndOrderManagement.domain.payload.request.OrderRequestDTO;
+import com.example.productAndOrderManagement.domain.payload.request.ProductRequestForOrderDTO;
+import com.example.productAndOrderManagement.domain.payload.response.OrderResponseDTO;
 import com.example.productAndOrderManagement.repository.OrderDetailRepository;
 import com.example.productAndOrderManagement.repository.OrderRepository;
 import com.example.productAndOrderManagement.repository.ProductRepository;
 import com.example.productAndOrderManagement.repository.specification.OrderSpecification;
-import com.example.productAndOrderManagement.repository.specification.ProductSpecification;
 import com.example.productAndOrderManagement.service.OrderService;
 import java.util.ArrayList;
 import java.util.Date;

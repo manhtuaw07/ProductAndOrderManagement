@@ -1,4 +1,4 @@
-package com.example.productAndOrderManagement.payload.request;
+package com.example.productAndOrderManagement.domain.payload.request;
 
 import java.util.List;
 import lombok.Getter;

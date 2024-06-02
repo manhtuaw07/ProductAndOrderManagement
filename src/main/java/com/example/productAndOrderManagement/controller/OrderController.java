@@ -1,12 +1,10 @@
 package com.example.productAndOrderManagement.controller;
 
-import com.example.productAndOrderManagement.exception.ResourceNotFoundException;
-import com.example.productAndOrderManagement.mapper.ErrorMapper;
-import com.example.productAndOrderManagement.payload.request.OrderRequestDTO;
-import com.example.productAndOrderManagement.payload.response.OrderResponseDTO;
-import com.example.productAndOrderManagement.payload.response.ProductResponseDTO;
+import com.example.productAndOrderManagement.domain.mapper.ErrorMapper;
+import com.example.productAndOrderManagement.domain.payload.request.OrderRequestDTO;
+import com.example.productAndOrderManagement.domain.payload.response.OrderResponseDTO;
 import com.example.productAndOrderManagement.service.OrderService;
-import com.example.productAndOrderManagement.validator.OrderRequestValidator;
+import com.example.productAndOrderManagement.domain.validator.OrderRequestValidator;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
@@ -18,7 +16,6 @@ import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;

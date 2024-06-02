@@ -1,12 +1,11 @@
-package com.example.productAndOrderManagement.validator;
+package com.example.productAndOrderManagement.domain.validator;
 
-import com.example.productAndOrderManagement.model.Product;
-import com.example.productAndOrderManagement.payload.request.ProductRequestDTO;
+import com.example.productAndOrderManagement.domain.model.Product;
+import com.example.productAndOrderManagement.domain.payload.request.ProductRequestDTO;
 import com.example.productAndOrderManagement.service.ProductService;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Repository;
 import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;

@@ -1,12 +1,11 @@
 package com.example.productAndOrderManagement.service;
 
-import com.example.productAndOrderManagement.model.Product;
-import com.example.productAndOrderManagement.payload.request.ProductRequestDTO;
-import com.example.productAndOrderManagement.payload.response.ProductResponseDTO;
+import com.example.productAndOrderManagement.domain.model.Product;
+import com.example.productAndOrderManagement.domain.payload.request.ProductRequestDTO;
+import com.example.productAndOrderManagement.domain.payload.response.ProductResponseDTO;
 import java.util.List;
 import java.util.Map;
 import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
 
 public interface ProductService {
 

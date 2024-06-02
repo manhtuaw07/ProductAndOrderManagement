@@ -1,4 +1,4 @@
-package com.example.productAndOrderManagement.model;
+package com.example.productAndOrderManagement.domain.model;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;

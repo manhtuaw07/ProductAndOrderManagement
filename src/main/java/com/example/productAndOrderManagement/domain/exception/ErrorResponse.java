@@ -1,4 +1,4 @@
-package com.example.productAndOrderManagement.exception;
+package com.example.productAndOrderManagement.domain.exception;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

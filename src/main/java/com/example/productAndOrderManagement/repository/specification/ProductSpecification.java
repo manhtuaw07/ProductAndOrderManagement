@@ -1,6 +1,6 @@
 package com.example.productAndOrderManagement.repository.specification;
 
-import com.example.productAndOrderManagement.model.Product;
+import com.example.productAndOrderManagement.domain.model.Product;
 import org.springframework.data.jpa.domain.Specification;
 
 public class ProductSpecification {

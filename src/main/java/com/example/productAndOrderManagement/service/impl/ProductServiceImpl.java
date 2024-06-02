@@ -1,9 +1,8 @@
 package com.example.productAndOrderManagement.service.impl;
-import com.example.productAndOrderManagement.exception.ResourceNotFoundException;
-import com.example.productAndOrderManagement.model.Product;
-import com.example.productAndOrderManagement.payload.request.ProductRequestDTO;
-import com.example.productAndOrderManagement.payload.response.OrderResponseDTO;
-import com.example.productAndOrderManagement.payload.response.ProductResponseDTO;
+import com.example.productAndOrderManagement.domain.exception.ResourceNotFoundException;
+import com.example.productAndOrderManagement.domain.model.Product;
+import com.example.productAndOrderManagement.domain.payload.request.ProductRequestDTO;
+import com.example.productAndOrderManagement.domain.payload.response.ProductResponseDTO;
 import com.example.productAndOrderManagement.repository.ProductRepository;
 import com.example.productAndOrderManagement.repository.specification.ProductSpecification;
 import com.example.productAndOrderManagement.service.ProductService;

@@ -1,6 +1,6 @@
 package com.example.productAndOrderManagement.repository;
 
-import com.example.productAndOrderManagement.model.OrderDetail;
+import com.example.productAndOrderManagement.domain.model.OrderDetail;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;

@@ -1,12 +1,10 @@
 package com.example.productAndOrderManagement.controller;
 
-import com.example.productAndOrderManagement.exception.ResourceNotFoundException;
-
-import com.example.productAndOrderManagement.mapper.ErrorMapper;
-import com.example.productAndOrderManagement.payload.request.ProductRequestDTO;
-import com.example.productAndOrderManagement.payload.response.ProductResponseDTO;
+import com.example.productAndOrderManagement.domain.mapper.ErrorMapper;
+import com.example.productAndOrderManagement.domain.payload.request.ProductRequestDTO;
+import com.example.productAndOrderManagement.domain.payload.response.ProductResponseDTO;
 import com.example.productAndOrderManagement.service.ProductService;
-import com.example.productAndOrderManagement.validator.ProductRequestValidator;
+import com.example.productAndOrderManagement.domain.validator.ProductRequestValidator;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;

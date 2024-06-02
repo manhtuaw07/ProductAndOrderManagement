@@ -1,9 +1,9 @@
 import com.example.productAndOrderManagement.controller.ProductController;
-import com.example.productAndOrderManagement.exception.ResourceNotFoundException;
-import com.example.productAndOrderManagement.payload.request.ProductRequestDTO;
-import com.example.productAndOrderManagement.payload.response.ProductResponseDTO;
+import com.example.productAndOrderManagement.domain.exception.ResourceNotFoundException;
+import com.example.productAndOrderManagement.domain.payload.request.ProductRequestDTO;
+import com.example.productAndOrderManagement.domain.payload.response.ProductResponseDTO;
 import com.example.productAndOrderManagement.service.ProductService;
-import com.example.productAndOrderManagement.validator.ProductRequestValidator;
+import com.example.productAndOrderManagement.domain.validator.ProductRequestValidator;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;

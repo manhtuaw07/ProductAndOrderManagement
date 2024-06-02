@@ -1,7 +1,7 @@
 package com.example.productAndOrderManagement.service;
 
-import com.example.productAndOrderManagement.payload.request.OrderRequestDTO;
-import com.example.productAndOrderManagement.payload.response.OrderResponseDTO;
+import com.example.productAndOrderManagement.domain.payload.request.OrderRequestDTO;
+import com.example.productAndOrderManagement.domain.payload.response.OrderResponseDTO;
 import java.util.List;
 import org.springframework.data.domain.Page;
 
